@@ -3,8 +3,15 @@ var gulp = require('gulp'),
     htmlmin = require('gulp-htmlmin'),
     watch = require('gulp-watch'),
     cssnano = require('gulp-cssnano'),
+    uglify = require('gulp-uglify'),
+    rename = require('gulp-rename'),
+    autoprefixer = require('gulp-autoprefixer'),
+    concat = require('gulp-concat'),
+    imagemin = require('gulp-imagemin'),
 
     compass = require('gulp-compass');
+
+
 
 
 var config = {
@@ -22,14 +29,14 @@ var config = {
     'js': {
         'src': [
             './node_modules/jquery/dist/jquery.min.js',
-            './node_modules/popper.js/dist/popper.min.js',
+            './node_modules/tether/dist/tether.min.js',
             './node_modules/bootstrap/dist/js/bootstrap.min.js',
             './src/js/*.js'
         ],
         'dest': './dist/js'
     },
     'img': {
-        'dest': './dist/img/',
+        'dest': './dist/img',
         'src': './src/img/*'
     }
 };
@@ -39,7 +46,13 @@ gulp.task('sass', function (){
     gulp.src(config.sass.src)
         .pipe(sass())
         .pipe(cssnano())
+        .pipe(rename('min.css'))
+        .pipe(autoprefixer({
+            browsers: ['last 2 versions'],
+            cascade: false
+        }))
         .pipe(gulp.dest(config.sass.dest))
+
 });
 
 
@@ -53,14 +66,17 @@ gulp.task('copy:html', function () {
 
 gulp.task('copy:js', function () {
     return gulp.src( './src/js/*.js')
-        .pipe(gulp.dest('./dist/js'));
+        .pipe(uglify())
+        .pipe(concat('min.js'))
+        .pipe(gulp.dest('./dist/js'))
+
 });
 
 
 gulp.task('minify:img', function () {
-        return gulp.src(config.img.src)
-            .pipe(imagemin())
-            .pipe(gulp.dest(config.img.dest));
+    return gulp.src(config.img.src)
+        .pipe(imagemin())
+        .pipe(gulp.dest(config.img.dest));
     }
 );
 
