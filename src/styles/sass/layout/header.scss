@@ -1,0 +1,42 @@
+.wrapper-header-top {
+  background-color: $light-black;
+}
+
+.form-header {
+  display: flex;
+  justify-content: space-between;
+
+  select {
+    border: none;
+    outline: none;
+    font-size: 13px;
+    color: $grey;
+    font-weight: bold;
+    background-color: transparent;
+  }
+}
+
+.currency {
+  color: $grey;
+  font-size: 14px;
+  padding: 12px 0 12px;
+}
+
+.btn-wrapper {
+  display: flex;
+}
+
+.btn-registration {
+  margin-right: 65px;
+}
+
+
+
+
+
+
+
+
+
+
+

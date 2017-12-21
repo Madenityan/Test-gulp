@@ -1,0 +1,29 @@
+.form-btn {
+    color: $grey;
+    font-weight: bold;
+    font-size: 13px;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+
+.batton{
+    padding: 15px 15px 15px;
+}
+
+.batton:hover {
+    background-color: $turquoise;
+    color:white;
+}
+
+.batton:hover i {
+    color: $white-color;
+}
+
+
+
+
+
+
+
+
