@@ -1,0 +1,17 @@
+.btn-section {
+  text-decoration: none;
+  font-size: 16px;
+  font-family: 'Montserrat', sans-serif;
+  color: $graffit-color;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  border: 1px solid $graffit-color;
+  padding: 20px 30px;
+}
+
+.btn-section:hover {
+  text-decoration: none;
+  background-color: $turquoise;
+  color: $white-color;
+  border: none;
+}

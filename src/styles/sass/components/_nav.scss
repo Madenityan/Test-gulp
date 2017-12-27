@@ -1,0 +1,62 @@
+.category-dropdown {
+  font-family: 'Montserrat', sans-serif;
+
+  h2 {
+    font-size: 14px;
+    color: $black-grey;
+    font-weight: bold;
+    margin: 0 0 35px 21px;
+  }
+
+ a {
+    color:$grey-2;
+    font-size: 14px;
+    line-height: 25px;
+  }
+}
+
+
+.banner-dropdown {
+  padding: 65px 55px;
+  margin-top: 60px;
+  background-color: $light-black;
+  font-family: 'Montserrat', sans-serif;
+
+
+  p {
+    font-size: 36px;
+    font-weight: bold;
+    color: $white-color;
+    text-transform: uppercase;
+    line-height: 45px;
+  }
+}
+
+
+.dropdown-toggle::after {
+  border: none;
+}
+
+.dropdown-show {
+  display: flex;
+  flex-wrap: wrap;
+  width: 455px;
+  padding: 30px;
+
+}
+
+
+.dropdown-menu {
+   border: none;
+  box-shadow: 0 17px 24px 5px rgba(0,0,0,0.14);
+
+}
+
+
+
+
+
+
+
+
+

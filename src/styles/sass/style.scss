@@ -10,10 +10,22 @@ $fa-font-path: '../../../node_modules/font-awesome/fonts';
 @import 'reset';
 
 
-
-
 @import 'components/form';
 @import 'components/icon';
+@import 'components/nav';
+@import 'components/jumbotron';
+@import 'components/btn';
+@import 'components/_masonry-layout';
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
+
+
+
+
+//@font-face {
+//  font-family: 'ProximaNova-Extrabld';
+//  src: url('../../../proximanova/ProximaNova-Extrabld.ttf');
+//}
+
+

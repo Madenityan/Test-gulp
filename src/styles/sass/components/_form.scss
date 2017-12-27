@@ -5,6 +5,7 @@
     border: none;
     outline: none;
     background: transparent;
+    font-family: 'Montserrat', sans-serif;
   }
 
 .batton{
@@ -19,6 +20,40 @@
 .batton:hover i {
     color: $white-color;
 }
+
+.form {
+    border: 1px solid $light-grey;
+    min-height: 30px;
+    padding-top: 4px;
+    margin-bottom: 50px;
+
+    & .input-area {
+        border: none;
+        -webkit-appearance: none;
+        width: 175px;
+        outline: none;
+        background-color: transparent;
+        color: $grey;
+        vertical-align: middle;
+    }
+
+    ::-webkit-input-placeholder {
+        color: $grey;
+        font-size: 15px;
+        padding-left: 15px;
+    }
+}
+
+.button-submit {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    color:  $grey;
+
+
+}
+
+
 
 
 
