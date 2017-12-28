@@ -1,0 +1,51 @@
+.list-lookbook {
+  display: flex;
+}
+
+.wrapper-lookbook {
+  display: flex;
+}
+
+.list-card-lookbook {
+  background-color: $light-light;
+  padding: 45px 45px 0;
+  width: 33%;
+  margin-right: 30px;
+
+}
+
+.list-card-lookbook:last-child {
+  margin-right: 0;
+}
+
+
+.text-lookbook {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  margin-top: 50px;
+
+
+  h3 {
+    font-size: 48px;
+    font-weight: normal;
+    text-transform: uppercase;
+    line-height: 55px;
+    margin-bottom: 20px;
+  }
+
+  span {
+    font-weight: bold;
+    text-transform: uppercase;
+   }
+
+  p {
+    font-family: 'Roboto', sans-serif;
+    font-size: 15px;
+    color: $grey-2;
+    line-height: 20px;
+  }
+}
+
+.btn-card {
+  margin-top: 50px;
+}

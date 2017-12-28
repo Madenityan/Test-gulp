@@ -16,23 +16,6 @@
 }
 
 
-.banner-dropdown {
-  padding: 65px 55px;
-  margin-top: 60px;
-  background-color: $light-black;
-  font-family: 'Montserrat', sans-serif;
-
-
-  p {
-    font-size: 36px;
-    font-weight: bold;
-    color: $white-color;
-    text-transform: uppercase;
-    line-height: 45px;
-  }
-}
-
-
 .dropdown-toggle::after {
   border: none;
 }
@@ -50,7 +33,7 @@
    border: none;
   box-shadow: 0 17px 24px 5px rgba(0,0,0,0.14);
 
-}
+ }
 
 
 

@@ -23,3 +23,28 @@
 .icon-hover:hover {
   background-color: $turquoise;
 }
+
+sup {
+  font-size: 10px;
+  vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
+  color: $grey-2;
+  margin-right: 3px;
+
+
+}
+
+.sub-icon {
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+  color: $grey-2;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  position: absolute;
+  top: 15px;
+}
+
+.icon-line {
+  text-decoration: line-through;
+}
+

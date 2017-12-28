@@ -6,6 +6,7 @@ $fa-font-path: '../../../node_modules/font-awesome/fonts';
 
 @import 'base/variables';
 @import 'layout/header';
+@import 'layout/footer';
 @import 'layout/common';
 @import 'reset';
 
@@ -15,17 +16,24 @@ $fa-font-path: '../../../node_modules/font-awesome/fonts';
 @import 'components/nav';
 @import 'components/jumbotron';
 @import 'components/btn';
-@import 'components/_masonry-layout';
+@import 'components/masonry-layout';
+@import 'components/card';
+@import 'components/banner';
+
+
+
+
+
 
 
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
-
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 
 
 
 //@font-face {
 //  font-family: 'ProximaNova-Extrabld';
-//  src: url('../../../proximanova/ProximaNova-Extrabld.ttf');
+//  src: url('../../../fonts/ProximaNova-Extrabld.ttf');
 //}
 
 

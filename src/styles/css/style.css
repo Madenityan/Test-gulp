@@ -6,6 +6,7 @@
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  */
 @import url("https://fonts.googleapis.com/css?family=Montserrat");
+@import url("https://fonts.googleapis.com/css?family=Roboto");
 :root {
   --color-blue: #007bff;
   --color-indigo: #6610f2;
@@ -11179,6 +11180,89 @@ a.text-dark:focus, a.text-dark:hover {
   color: #00c8c8;
 }
 
+.footer-top {
+  background-color: #f8f8f8;
+  padding: 60px 0 60px;
+  font-family: 'Montserrat', sans-serif;
+}
+
+.footer-nav {
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+.list-footer h2 {
+  font-size: 14px;
+  color: #575153;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 35px;
+}
+.list-footer a {
+  color: #9c9c9c;
+  font-size: 14px;
+  line-height: 30px;
+  text-decoration: none;
+}
+.list-footer address {
+  color: #9c9c9c;
+  font-size: 14px;
+  line-height: 25px;
+  width: 235px;
+  margin-bottom: 10px;
+}
+
+.banners-footer {
+  display: flex;
+}
+.banners-footer .social-icon {
+  width: 50%;
+  text-align: center;
+  color: #ffffff;
+  background-color: #00c8c8;
+  padding: 90px 55px;
+  font-size: 35px;
+}
+.banners-footer .social-icon i {
+  margin-right: 60px;
+}
+.banners-footer .social-icon i:last-child {
+  margin-right: 0;
+}
+
+.baner-award {
+  width: 50%;
+  text-align: center;
+  margin-right: 35px;
+}
+.baner-award p {
+  font-weight: normal;
+}
+
+.footer-bottom {
+  background-color: #333333;
+  font-family: 'Montserrat', sans-serif;
+  padding: 15px 0 15px;
+}
+.footer-bottom .container {
+  display: flex;
+  justify-content: space-between;
+}
+.footer-bottom a {
+  text-decoration: none;
+  font-size: 13px;
+  color: #9c9c9c;
+  font-weight: bold;
+}
+
+.development {
+  display: flex;
+}
+.development p {
+  margin-right: 15px;
+}
+
 .container {
   width: 1170px;
   margin: 0 auto;
@@ -11202,6 +11286,10 @@ body {
   display: flex;
   justify-content: flex-end;
   margin-top: 120px;
+}
+
+.lookbook {
+  padding: 60px 0 120px;
 }
 
 html, body, div, span, applet, object, iframe,
@@ -11331,6 +11419,28 @@ table {
   background-color: #00c8c8;
 }
 
+sup {
+  font-size: 10px;
+  vertical-align: baseline;
+  font-family: 'Montserrat', sans-serif;
+  color: #9c9c9c;
+  margin-right: 3px;
+}
+
+.sub-icon {
+  font-size: 21px;
+  font-family: 'Montserrat', sans-serif;
+  color: #9c9c9c;
+  letter-spacing: 2px;
+  margin-left: 15px;
+  position: absolute;
+  top: 15px;
+}
+
+.icon-line {
+  text-decoration: line-through;
+}
+
 .category-dropdown {
   font-family: 'Montserrat', sans-serif;
 }
@@ -11344,20 +11454,6 @@ table {
   color: #9c9c9c;
   font-size: 14px;
   line-height: 25px;
-}
-
-.banner-dropdown {
-  padding: 65px 55px;
-  margin-top: 60px;
-  background-color: #333333;
-  font-family: 'Montserrat', sans-serif;
-}
-.banner-dropdown p {
-  font-size: 36px;
-  font-weight: bold;
-  color: #ffffff;
-  text-transform: uppercase;
-  line-height: 45px;
 }
 
 .dropdown-toggle::after {
@@ -11402,7 +11498,7 @@ table {
   color: #454647;
   text-transform: uppercase;
   letter-spacing: 4px;
-  border: 1px solid #454647;
+  border: 2px solid #454647;
   padding: 20px 30px;
 }
 
@@ -11452,4 +11548,68 @@ table {
   background-color: #f8f8f8;
   cursor: pointer;
   z-index: 1;
+}
+
+.icon-line + .sub-icon {
+  margin-left: 80px;
+}
+
+.list-lookbook {
+  display: flex;
+}
+
+.wrapper-lookbook {
+  display: flex;
+}
+
+.list-card-lookbook {
+  background-color: #f8f8f8;
+  padding: 45px 45px 0;
+  width: 33%;
+  margin-right: 30px;
+}
+
+.list-card-lookbook:last-child {
+  margin-right: 0;
+}
+
+.text-lookbook {
+  font-family: 'Montserrat', sans-serif;
+  text-align: right;
+  margin-top: 50px;
+}
+.text-lookbook h3 {
+  font-size: 48px;
+  font-weight: normal;
+  text-transform: uppercase;
+  line-height: 55px;
+  margin-bottom: 20px;
+}
+.text-lookbook span {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.text-lookbook p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  color: #9c9c9c;
+  line-height: 20px;
+}
+
+.btn-card {
+  margin-top: 50px;
+}
+
+.banner {
+  padding: 65px 55px;
+  margin-top: 60px;
+  background-color: #333333;
+  font-family: 'Montserrat', sans-serif;
+}
+.banner p {
+  font-size: 36px;
+  font-weight: bold;
+  color: #ffffff;
+  text-transform: uppercase;
+  line-height: 45px;
 }
