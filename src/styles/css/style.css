@@ -11834,13 +11834,12 @@ button:focus {
     display: none;
   }
 
-  .banner {
-    display: none;
-  }
-
   .dropdown-show {
     width: 0;
     padding: 0;
+  }
+  .dropdown-show .banner {
+    display: none;
   }
 
   .nav-item .dropdown-menu.show {

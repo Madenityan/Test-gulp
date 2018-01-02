@@ -209,20 +209,16 @@
     display: none;
    }
 
-  .banner {
-  display: none;
-  }
-
   .dropdown-show {
     width: 0;
     padding: 0;
+
+    .banner {
+      display: none;
+    }
   }
 
   .nav-item .dropdown-menu.show {
     display: none;
   }
-
-
-
-
 }
