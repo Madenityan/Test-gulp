@@ -17,3 +17,33 @@
 }
 
 
+.btn-filter {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: $black-grey;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin: 0 50px 0 10px;
+}
+
+.btn-filter:last-child {
+  margin-right: 0;
+}
+
+.btn-filter:hover {
+  color: $turquoise;
+}
+
+button:focus {
+  outline: none;
+
+
+
+
+
+}
+
+

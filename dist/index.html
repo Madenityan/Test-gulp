@@ -194,9 +194,17 @@
 </section>
 <section class="category">
     <div class="container-fluid">
-        <div class="masonry-container">
+        <div class="wrapper-category">
+            <div class="controls">
+                <button class="filter btn-filter" data-filter="all">popular</button>
+                <button class="filter btn-filter" data-filter=".new-arrivals">new arrivals</button>
+                <button class="filter btn-filter" data-filter=".best-sellers">best sellers</button>
+                <button class="filter btn-filter" data-filter=".special-offers">special offers</button>
+                <button class="filter btn-filter" data-filter=".coming-soon">coming soon</button>
+            </div>
+            <div class="masonry-container container-mix">
             <div class="row">
-                <div class="col-lg-3 item">
+                <div class="col-lg-3 item mix new-arrivals" data-order="1">
                     <img src="img/item-1.png" alt="item-1">
                     <span class="sub-icon"><sup>£</sup>89.99</span>
                     <div class="hover-cards">
@@ -212,7 +220,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 item">
+                <div class="col-lg-3 item mix new-arrivals" data-order="1">
                     <img src="img/item-2.png" alt="item-2">
                     <span class="sub-icon"><sup>£</sup>47.50</span>
                     <div class="hover-cards">
@@ -228,7 +236,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 item">
+                <div class="col-lg-6 item mix new-arrivals" data-order="2">
                     <img src="img/item-3.png" alt="item-3">
                     <div>
                         <span class="sub-icon icon-line"><sup>£</sup>107</span>
@@ -248,7 +256,7 @@
                     </div>
 
                 </div>
-                <div class="col-lg-6 item">
+                <div class="col-lg-6 item mix best-sellers" data-order="3">
                     <img src="img/item-4.png" alt="item-4">
                     <div>
                         <span class="sub-icon"><sup>£</sup>69.95</span>
@@ -266,7 +274,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 item">
+                <div class="col-lg-3 item mix special-offers" data-order="4">
                     <img src="img/item-5.png" alt="item-5">
                     <span class="sub-icon"><sup>£</sup>29.95</span>
                     <div class="hover-cards">
@@ -282,7 +290,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 item">
+                <div class="col-lg-3 item mix coming-soon" data-order="5">
                     <img src="img/item-6.png" alt="item-6">
                     <span class="sub-icon"><sup>£</sup>34.79</span>
                     <div class="hover-cards">
@@ -299,6 +307,7 @@
                     </div>
                 </div>
             </div>
+        </div>
         </div>
     </div>
 </section>
@@ -393,17 +402,16 @@
             </ul>
         </div>
         <div class="banners-footer">
-            <div class="baner-award banner">
+            <div class="banner-award banner">
                 <p>award winner</p>
                 <p>fashion awards 2016</p>
             </div>
             <div class="social-icon banner">
-                <i class="fa fa-facebook" aria-hidden="true"></i>
-                <i class="fa fa-twitter" aria-hidden="true"></i>
-                <i class="fa fa-instagram" aria-hidden="true"></i>
-                <i class="fa fa-pinterest" aria-hidden="true"></i>
+                <a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                <a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a>
             </div>
-
         </div>
     </div>
 </footer>
@@ -419,13 +427,15 @@
     </div>
  </footer>
 <script src="../node_modules/jquery/dist/jquery.min.js"></script>
+<script src="../node_modules/mixitup/dist/mixitup.min.js"></script>
 <script src="../node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="../node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-
 <script src="../node_modules/imagesloaded/imagesloaded.pkgd.min.js"></script>
-<!--<script src="../node_modules/imagefill/src/imagefill.js"></script>-->
 <script src="../node_modules/masonry-layout/dist/masonry.pkgd.min.js"></script>
 
 <script src="../dist/js/min.js"></script>
 </body>
 </html>
+
+
+

@@ -45,23 +45,23 @@
 .social-icon {
    width: 50%;
    text-align: center;
-   color: $white-color;
    background-color: $turquoise;
    padding: 90px 55px;
    font-size: 35px;
 
-    i {
+    a {
       margin-right: 60px;
+      color: $white-color;
     }
 
-    i:last-child {
+    a:last-child {
       margin-right: 0;
     }
  }
 
 }
 
-.baner-award {
+.banner-award {
   width: 50%;
   text-align: center;
   margin-right: 35px;

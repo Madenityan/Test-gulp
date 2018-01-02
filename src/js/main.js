@@ -7,7 +7,15 @@ $(document).ready(function() {
             itemSelector: ".item"
             });
          });
+
+
+    var mixer = mixitup('.container-mix', {
+        animation: {
+            effects: 'scale fade',
+            duration: '100'
+        }
     });
 
+});
 
 

@@ -11103,6 +11103,56 @@ a.text-dark:focus, a.text-dark:hover {
   clip: auto;
 }
 
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
 .wrapper-header-top {
   background-color: #333333;
   font-family: 'Montserrat', sans-serif;
@@ -11219,24 +11269,24 @@ a.text-dark:focus, a.text-dark:hover {
 .banners-footer .social-icon {
   width: 50%;
   text-align: center;
-  color: #ffffff;
   background-color: #00c8c8;
   padding: 90px 55px;
   font-size: 35px;
 }
-.banners-footer .social-icon i {
+.banners-footer .social-icon a {
   margin-right: 60px;
+  color: #ffffff;
 }
-.banners-footer .social-icon i:last-child {
+.banners-footer .social-icon a:last-child {
   margin-right: 0;
 }
 
-.baner-award {
+.banner-award {
   width: 50%;
   text-align: center;
   margin-right: 35px;
 }
-.baner-award p {
+.banner-award p {
   font-weight: normal;
 }
 
@@ -11292,54 +11342,10 @@ body {
   padding: 60px 0 120px;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed,
-figure, figcaption, footer, header, hgroup,
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-}
-
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol, ul {
-  list-style: none;
-}
-
-blockquote, q {
-  quotes: none;
-}
-
-blockquote:before, blockquote:after,
-q:before, q:after {
-  content: '';
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
+.wrapper-category {
+  border-top: 3px solid #f8f8f8;
+  border-bottom: 3px solid #f8f8f8;
+  padding: 55px 0 55px;
 }
 
 .form-btn {
@@ -11475,6 +11481,7 @@ sup {
 .wrapper-section {
   background: url(../../img/welcome.png) top;
   min-height: 914px;
+  margin-bottom: 55px;
 }
 .wrapper-section h1 {
   font-size: 320px;
@@ -11507,6 +11514,30 @@ sup {
   background-color: #00c8c8;
   color: #ffffff;
   border: none;
+}
+
+.btn-filter {
+  background-color: transparent;
+  border: none;
+  font-size: 14px;
+  color: #575153;
+  font-weight: bold;
+  text-transform: uppercase;
+  font-family: 'Montserrat', sans-serif;
+  cursor: pointer;
+  margin: 0 50px 0 10px;
+}
+
+.btn-filter:last-child {
+  margin-right: 0;
+}
+
+.btn-filter:hover {
+  color: #00c8c8;
+}
+
+button:focus {
+  outline: none;
 }
 
 .item img {
@@ -11612,4 +11643,207 @@ sup {
   color: #ffffff;
   text-transform: uppercase;
   line-height: 45px;
+}
+
+.controls {
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 599px) {
+  .container {
+    width: 320px;
+  }
+
+  .banner-award {
+    width: 100%;
+  }
+
+  .banners-footer {
+    display: block;
+  }
+  .banners-footer .social-icon {
+    width: 100%;
+  }
+  .banners-footer .social-icon a {
+    margin-right: 10px;
+  }
+  .banners-footer .social-icon .banner {
+    text-align: center;
+    margin-top: 0;
+  }
+
+  .footer-nav {
+    display: block;
+    text-align: center;
+    padding-bottom: 0;
+  }
+
+  .footer-top {
+    padding: 15px 0 60px;
+  }
+
+  .footer-bottom .container {
+    display: block;
+    text-align: center;
+  }
+
+  .list-footer li {
+    margin-top: 15px;
+  }
+  .list-footer address {
+    width: 100%;
+  }
+  .list-footer h2 {
+    margin-bottom: 10px;
+  }
+
+  .development {
+    display: block;
+  }
+
+  .list-lookbook {
+    display: block;
+  }
+
+  .wrapper-lookbook {
+    display: block;
+  }
+
+  .lookbook {
+    padding: 15px 0 20px;
+  }
+
+  .list-card-lookbook {
+    width: 100%;
+    margin: 25px 0;
+    padding-bottom: 20px;
+  }
+
+  .img-lookbook {
+    text-align: center;
+  }
+
+  .text-lookbook {
+    text-align: center;
+  }
+  .text-lookbook h3 {
+    font-size: 30px;
+  }
+
+  .big-text h1 {
+    display: none;
+  }
+
+  .btn-registration {
+    margin-right: 0;
+  }
+
+  .btn-wrapper {
+    display: block;
+  }
+
+  .container-fluid {
+    padding: 0;
+  }
+
+  .btn-card {
+    display: block;
+    margin-top: 25px;
+  }
+
+  .sub-icon {
+    margin-left: 5px;
+  }
+
+  .icon-line + .sub-icon {
+    margin: 30px 0 0;
+  }
+
+  .wrapper-category {
+    padding: 15px 0 20px;
+  }
+
+  .controls {
+    margin-bottom: 0;
+    text-align: center;
+  }
+
+  .btn-filter {
+    line-height: 20px;
+    margin: 0;
+  }
+
+  .batton-welcome-section {
+    justify-content: center;
+    margin-top: 326px;
+  }
+  .batton-welcome-section .btn-section {
+    font-size: 15px;
+    letter-spacing: 1px;
+    padding: 15px 15px;
+  }
+
+  .wrapper-section {
+    margin-bottom: 0;
+    background-position-x: 33%;
+    min-height: 500px;
+  }
+
+  .header-bottom {
+    justify-content: space-between;
+  }
+  .header-bottom img {
+    display: none;
+  }
+
+  .navbar-light .navbar-toggler {
+    margin-right: 25px;
+  }
+
+  .form {
+    display: none;
+  }
+
+  .navbar-nav {
+    background-color: #898989;
+    text-align: center;
+  }
+
+  .navbar-light .navbar-nav .nav-link {
+    color: #ffffff;
+  }
+
+  .icon-nav {
+    color: #ffffff;
+  }
+
+  .dropdown {
+    margin-right: 0;
+    margin-top: 15px;
+  }
+
+  .dropdown:last-child {
+    margin-right: 0;
+  }
+
+  .category-dropdown {
+    display: none;
+  }
+
+  .dropdown-menu {
+    display: none;
+  }
+
+  .banner {
+    display: none;
+  }
+
+  .dropdown-show {
+    width: 0;
+    padding: 0;
+  }
+
+  .nav-item .dropdown-menu.show {
+    display: none;
+  }
 }
