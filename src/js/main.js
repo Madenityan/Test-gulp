@@ -1,10 +1,10 @@
 $(document).ready(function() {
 
-    var $container = $(".masonry-container");
+    var $container = $('.masonry-container');
     $container.imagesLoaded(function() {
         $container.masonry( {
-            columWidht: ".item",
-            itemSelector: ".item"
+            columWidht: '.item',
+            itemSelector: '.item'
             });
          });
 

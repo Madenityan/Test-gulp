@@ -68,13 +68,13 @@ gulp.task('css-copy', function (){
 
 gulp.task('copy:html', function () {
     return gulp.src(config.html.src)
-        // .pipe(htmlmin({collapseWhitespace: true}))
+        .pipe(htmlmin({collapseWhitespace: true}))
         .pipe(gulp.dest(config.html.dest));
 });
 
 gulp.task('copy:js', function () {
     return gulp.src( './src/js/*.js')
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(concat('min.js'))
         .pipe(gulp.dest('./dist/js'))
 });
@@ -96,7 +96,7 @@ gulp.task('watch', function () {
         './src/styles/sass/**/*.scss',
         './src/js/*.js',
         './src/*.html'
-    ], ['build-watch']);
+    ], ['build']);
 });
 
 
