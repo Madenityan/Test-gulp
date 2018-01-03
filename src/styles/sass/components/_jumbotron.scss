@@ -2,6 +2,12 @@
   background: url(../../img/welcome.png) top;
   min-height: 914px;
   margin-bottom: 55px;
+}
+
+.big-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 145px;
 
   h1 {
     font-size: 320px;
@@ -9,14 +15,9 @@
     font-family: 'Montserrat', sans-serif;
     font-weight: 900;
     color: $brown-color;
-    text-align: center;
-    letter-spacing:300px;
+    letter-spacing:200px;
+
+
   }
-}
-
-.big-text {
-  text-indent: 225px;
-  margin-top: 145px;
-
 }
 

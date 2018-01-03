@@ -11483,19 +11483,19 @@ sup {
   min-height: 914px;
   margin-bottom: 55px;
 }
-.wrapper-section h1 {
+
+.big-text {
+  display: flex;
+  justify-content: center;
+  margin-top: 145px;
+}
+.big-text h1 {
   font-size: 320px;
   text-transform: uppercase;
   font-family: 'Montserrat', sans-serif;
   font-weight: 900;
   color: #575153;
-  text-align: center;
-  letter-spacing: 300px;
-}
-
-.big-text {
-  text-indent: 225px;
-  margin-top: 145px;
+  letter-spacing: 200px;
 }
 
 .btn-section {
